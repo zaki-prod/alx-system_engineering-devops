@@ -1,4 +1,5 @@
-splay Time - Hour, Minutes
+#!/usr/bin/env bash
+# Display Time - Hour, Minutes
 
 hour=0
 
