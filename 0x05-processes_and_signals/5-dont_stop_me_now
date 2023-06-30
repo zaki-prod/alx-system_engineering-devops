@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-# Write a Bash script that displays To infinity and beyond indefinitely.
-flag=0
-while [ $flag -eq 0 ]
-do
-        echo "To infinity and beyond"
-	sleep 2
+# Find process and kill
 
-done
+pgrep -f 4-to_infinity_and_beyond | xargs kill
