@@ -1,0 +1,10 @@
+#!/usr/bin/env
+# server-01 login 
+
+
+eval $("ssh-agent")
+
+ssh-add !/.ssh/schhol
+
+
+ssh ubuntu@52.87.0.165
