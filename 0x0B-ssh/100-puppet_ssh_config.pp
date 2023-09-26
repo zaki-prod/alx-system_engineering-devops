@@ -11,6 +11,5 @@ content =>"
 	host*
 	IdentifyFile ~/.ssh/school
 	passwordAuthentication no
-	"
-
+	",
 }
