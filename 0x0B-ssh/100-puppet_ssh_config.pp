@@ -1,15 +1,16 @@
-#!/usr/bin/bash/env bash
-# using puppet to make changes to our cinfiguration file
+# Configuration client to connect without password using puppet
+include stdlib
 
-file { '/etc/ssh/ssh_config':
-	ensure => present,
+file_line {'Disable password authentication':
+ensure  => present,
+path    => '/etc/ssh/ssh_config',
+line    => 'PasswordAuthentication no',
+replace => true
+}
 
-content =>"
-
-	# ssh client configuration
-	
-	host*
-	IdentifyFile ~/.ssh/school
-	passwordAuthentication no
-	",
+file_line {'Set SSH identity file to ~/.ssh/school':
+ensure  => present,
+path    => '/etc/ssh/ssh_config',
+line    => 'IdentityFile ~/.ssh/school',
+replace => true
 }
