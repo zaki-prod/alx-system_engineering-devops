@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"titles of the first 10 hot posts"
+"first 10 hot posts"
 
 import requests
 
