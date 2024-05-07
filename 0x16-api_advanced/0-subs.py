@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-" number of subscribers"
+"subscribers count"
 
 import requests
 
